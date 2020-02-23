@@ -6,7 +6,7 @@ function addPost(e) {
         let title = document.getElementById("article-title").value;
         let poster = document.getElementById("article-poster").value;
 
-        fetch("http://localhost:3000/api/articles", {
+        fetch("http://localhost:5500/api/articles", {
             method: "POST",
             headers: {
                 "Accept": "application/json, text/plain, */*",

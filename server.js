@@ -7,5 +7,5 @@ mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true, useUnifiedT
 .then(() => console.log('Connected to MongoDB...'))
 .catch(err => console.error('could not connect to MongoDB...', err));
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5500;
 app.listen(port, () => console.log(`Listening on port ${port}....`));

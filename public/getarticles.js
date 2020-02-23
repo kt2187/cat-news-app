@@ -1,5 +1,5 @@
     async function apiCall() {
-        let res = await fetch("http://localhost:3000/api/articles")
+        let res = await fetch("http://localhost:5500/api/articles")
 
         return res.json();
     }
@@ -19,7 +19,8 @@
             //console.log(res);
 
             //USE with function to delete from UI
-            deleteButton.addEventListener("click", deleteArticle);      
+            deleteButton.addEventListener("click", deleteArticle);    
+            
 
             let row = document.createElement("tr");
             row.id = "table-row";
